@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --primary: #4C5FD5;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.row {
+    max-width: 1400px;
+    padding: 0px 60px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Navigation Bar */
+
+.navbar {
+    background-color: black;
+    height: 88px;
+    display: flex;
+    align-items: center;
+    padding: 0px 120px;
+    justify-content: space-between;
+}
+
+.left {
+    display: flex;
+    color: white;
+}
+
+.logo__image {
+    width: 125px;
+    height: 64px;
+}
+
+.divider {
+    font-size: 36px;
+    display: flex;
+    margin-left: 8px;
+    align-items: center;
+    user-select: none;
+}
+
+.help__center {
+    margin-left: 8px;
+    font-size: 26px;
+    display: flex;
+    align-items: center;
+}
+
+
+.nav__button {
+    padding: 8px 24px;
+    border-radius: 8px;
+    margin-right: 16px;
+    font-size: 24px;
+    color: white;
+    background-color: #191A1B;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.signIn__button {
+    background-color: var(--primary);
+    border: none;
+    transition: 200ms;
+}
+
+.signIn__button:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Header */
+
+#header {
+    background-color: #DADBF1;
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.header__text {
+    font-size: 78px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    letter-spacing: 0.6;
+}
+
+.search__wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    max-width: 700px;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+}
+
+.search__bar {
+    padding: 18px;
+    font-size: 20px;
+    border-radius: 4px;
+    border: 1px solid black;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search__button {
+    position: absolute;
+    right: 20px;
+    background-color: transparent;
+    font-size: 24px;
+    border: none;
+    transition: 200ms;
+    opacity: 0.7;
+}
+
+.search__button:hover {
+    color: var(--primary);
+}
+
+/* Questions */
+
+#questions {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 80px;
+    margin: 120px 0px;
+}
+
+.questions__row {
+    display: flex;
+    gap: 80px;
+    flex-wrap: wrap;
+}
+
+.question {
+    display: flex;
+    width: calc(50% - 40px);
+
+}
+
+.question__text {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+
+.question__logo {
+    width: 85px;
+    height: 85px;
+    margin-right: 32px;
+}
+
+.question__header {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.question__para {
+    margin: 8px 0;
+    width: 100%;
+    max-width: 490px;
+    word-wrap: wrap;
+    font-size: 20px;
+}
+
+.question__link {
+    color: var(--primary);
+    font-size: 18px;
+    position: relative;
+}
+
+.question__link::after {
+    content: '';
+    display: block;
+    width: 23%;
+    height: 1px;
+    background-color: var(--primary);
+    position: absolute;
+    transform: scaleX(0);
+    /* transition: transform 0.3s; */
+}
+
+.question__link:hover::after {
+    transform: scaleX(1);
+}
+
+/* Footer */
+
+.footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    height: 400px;
+    justify-content: space-evenly;
+}
+
+.footer__col {
+    display: flex;
+    flex-direction: column;
+    margin-top: 64px;
+}
+
+.footer__head {
+    font-size: 28px;
+    margin-bottom: 16px;
+}
+
+.footer__link {
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 4px;
+}
+
+.footer__link:hover {
+    text-decoration: underline;
+
+}
